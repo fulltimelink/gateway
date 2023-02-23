@@ -4,6 +4,7 @@ go 1.18
 
 require (
 	github.com/go-kratos/aegis v0.1.2
+	github.com/go-kratos/kratos/contrib/config/nacos/v2 v2.0.0-20230222075022-bab67facad0d
 	github.com/go-kratos/kratos/contrib/registry/consul/v2 v2.0.0-20220318065833-e66a2905ab70
 	github.com/go-kratos/kratos/contrib/registry/nacos/v2 v2.0.0-20230222075022-bab67facad0d
 	github.com/go-kratos/kratos/v2 v2.5.3
@@ -79,5 +80,5 @@ require (
 	google.golang.org/grpc v1.48.0 // indirect
 	gopkg.in/ini.v1 v1.66.2 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
-	gopkg.in/yaml.v3 v3.0.0 // indirect
+	gopkg.in/yaml.v3 v3.0.1 // indirect
 )

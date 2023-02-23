@@ -11,7 +11,7 @@ api:
 build:
 	GOOS=linux GOARCH=amd64 go build -o gateway github.com/go-kratos/gateway/cmd/gateway
 
-versions := 0.1.0
+versions := 0.1.2
 .PHONY: docker
 docker:
 	docker build -t gateway:v$(versions) .

@@ -105,7 +105,8 @@ func main() {
 		go ctrlLoader.Run(ctx)
 	}
 
-	confLoader, err := config.NewFileLoader(proxyConfig)
+	//confLoader, err := config.NewFileLoader(proxyConfig)
+	confLoader, err := config.NewNacosLoader(proxyConfig)
 	if err != nil {
 		log.Fatalf("failed to create config file loader: %v", err)
 	}
