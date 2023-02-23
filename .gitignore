@@ -36,3 +36,8 @@ bin/
 .vscode/
 .idea/
 *.swp
+/log
+/cache
+/configs
+/gateway
+/*.exe
