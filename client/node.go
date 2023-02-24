@@ -11,7 +11,7 @@ import (
 	"github.com/go-kratos/kratos/v2/selector"
 	"golang.org/x/net/http2"
 
-	config "github.com/go-kratos/gateway/api/gateway/config/v1"
+	config "github.com/fulltimelink/gateway/api/gateway/config/v1"
 )
 
 var _ selector.Node = &node{}

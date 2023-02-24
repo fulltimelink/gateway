@@ -7,26 +7,26 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/go-kratos/gateway/client"
-	"github.com/go-kratos/gateway/config"
-	configLoader "github.com/go-kratos/gateway/config/config-loader"
-	"github.com/go-kratos/gateway/discovery"
-	"github.com/go-kratos/gateway/middleware"
-	"github.com/go-kratos/gateway/proxy"
-	"github.com/go-kratos/gateway/proxy/debug"
-	"github.com/go-kratos/gateway/server"
+	"github.com/fulltimelink/gateway/client"
+	"github.com/fulltimelink/gateway/config"
+	configLoader "github.com/fulltimelink/gateway/config/config-loader"
+	"github.com/fulltimelink/gateway/discovery"
+	"github.com/fulltimelink/gateway/middleware"
+	"github.com/fulltimelink/gateway/proxy"
+	"github.com/fulltimelink/gateway/proxy/debug"
+	"github.com/fulltimelink/gateway/server"
 
 	_ "net/http/pprof"
 
-	_ "github.com/go-kratos/gateway/discovery/consul"
-	_ "github.com/go-kratos/gateway/discovery/nacos"
-	_ "github.com/go-kratos/gateway/middleware/bbr"
-	"github.com/go-kratos/gateway/middleware/circuitbreaker"
-	_ "github.com/go-kratos/gateway/middleware/cors"
-	_ "github.com/go-kratos/gateway/middleware/logging"
-	_ "github.com/go-kratos/gateway/middleware/rewrite"
-	_ "github.com/go-kratos/gateway/middleware/tracing"
-	_ "github.com/go-kratos/gateway/middleware/transcoder"
+	_ "github.com/fulltimelink/gateway/discovery/consul"
+	_ "github.com/fulltimelink/gateway/discovery/nacos"
+	_ "github.com/fulltimelink/gateway/middleware/bbr"
+	"github.com/fulltimelink/gateway/middleware/circuitbreaker"
+	_ "github.com/fulltimelink/gateway/middleware/cors"
+	_ "github.com/fulltimelink/gateway/middleware/logging"
+	_ "github.com/fulltimelink/gateway/middleware/rewrite"
+	_ "github.com/fulltimelink/gateway/middleware/tracing"
+	_ "github.com/fulltimelink/gateway/middleware/transcoder"
 	_ "go.uber.org/automaxprocs"
 
 	"github.com/go-kratos/kratos/v2"
@@ -147,6 +147,8 @@ func main() {
 	for _, addr := range proxyAddrs.Get() {
 		servers = append(servers, server.NewProxy(serverHandler, addr))
 	}
+	// --  @# 追加metrics server
+	servers = append(servers, server.NewMetrics())
 	app := kratos.New(
 		kratos.Name(bc.Name),
 		kratos.Context(ctx),

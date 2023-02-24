@@ -7,7 +7,7 @@ import (
 	"strings"
 	"sync/atomic"
 
-	config "github.com/go-kratos/gateway/api/gateway/config/v1"
+	config "github.com/fulltimelink/gateway/api/gateway/config/v1"
 
 	"github.com/go-kratos/kratos/v2/log"
 	"github.com/go-kratos/kratos/v2/registry"

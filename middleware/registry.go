@@ -4,7 +4,7 @@ import (
 	"errors"
 	"strings"
 
-	configv1 "github.com/go-kratos/gateway/api/gateway/config/v1"
+	configv1 "github.com/fulltimelink/gateway/api/gateway/config/v1"
 )
 
 var globalRegistry = NewRegistry()

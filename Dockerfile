@@ -25,4 +25,5 @@ ENV SHELL /bin/bash
 WORKDIR $WORKDIR
 EXPOSE 8080
 EXPOSE 7070
+EXPOSE 6060
 CMD ["./gateway", "-conf", "configs/config.yaml", "-discovery.dsn", "nacos://nacos.java:8848?namespaceid=dx-transcode&timeout=5000&loglevel=debug&notloadcacheatstart=true"]

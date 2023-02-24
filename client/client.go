@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/go-kratos/gateway/middleware"
+	"github.com/fulltimelink/gateway/middleware"
 	"github.com/go-kratos/kratos/v2/selector"
 )
 

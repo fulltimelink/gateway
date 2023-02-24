@@ -9,9 +9,9 @@ api:
 
 .PHONY: build
 build:
-	GOOS=linux GOARCH=amd64 go build -o gateway github.com/go-kratos/gateway/cmd/gateway
+	GOOS=linux GOARCH=amd64 go build -o gateway github.com/fulltimelink/gateway/cmd/gateway
 
-versions := 0.1.2
+versions := 0.1.4
 .PHONY: docker
 docker:
 	docker build -t gateway:v$(versions) .

@@ -7,9 +7,9 @@ import (
 	"reflect"
 	"testing"
 
-	config "github.com/go-kratos/gateway/api/gateway/config/v1"
-	"github.com/go-kratos/gateway/middleware"
-	"github.com/go-kratos/gateway/middleware/logging"
+	config "github.com/fulltimelink/gateway/api/gateway/config/v1"
+	"github.com/fulltimelink/gateway/middleware"
+	"github.com/fulltimelink/gateway/middleware/logging"
 )
 
 type responseWriter struct {

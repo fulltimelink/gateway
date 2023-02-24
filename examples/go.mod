@@ -1,4 +1,4 @@
-module github.com/go-kratos/gateway/examples
+module github.com/fulltimelink/gateway/examples
 
 go 1.17
 

@@ -7,9 +7,9 @@ import (
 	"strings"
 	"time"
 
-	config "github.com/go-kratos/gateway/api/gateway/config/v1"
-	v1 "github.com/go-kratos/gateway/api/gateway/middleware/cors/v1"
-	"github.com/go-kratos/gateway/middleware"
+	config "github.com/fulltimelink/gateway/api/gateway/config/v1"
+	v1 "github.com/fulltimelink/gateway/api/gateway/middleware/cors/v1"
+	"github.com/fulltimelink/gateway/middleware"
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/types/known/anypb"
 	"google.golang.org/protobuf/types/known/durationpb"

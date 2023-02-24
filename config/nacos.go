@@ -9,14 +9,14 @@ import (
 	"sync"
 	"time"
 
-	"github.com/go-kratos/gateway/tools"
+	"github.com/fulltimelink/gateway/tools"
 
 	"github.com/go-kratos/kratos/v2/config"
 	"github.com/nacos-group/nacos-sdk-go/clients"
 	"github.com/nacos-group/nacos-sdk-go/common/constant"
 	"github.com/nacos-group/nacos-sdk-go/vo"
 
-	configv1 "github.com/go-kratos/gateway/api/gateway/config/v1"
+	configv1 "github.com/fulltimelink/gateway/api/gateway/config/v1"
 	knacos "github.com/go-kratos/kratos/contrib/config/nacos/v2"
 	"github.com/go-kratos/kratos/v2/log"
 	"google.golang.org/protobuf/encoding/protojson"

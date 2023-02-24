@@ -4,8 +4,8 @@ import (
 	"net/http"
 	"time"
 
-	config "github.com/go-kratos/gateway/api/gateway/config/v1"
-	"github.com/go-kratos/gateway/proxy/condition"
+	config "github.com/fulltimelink/gateway/api/gateway/config/v1"
+	"github.com/fulltimelink/gateway/proxy/condition"
 )
 
 type retryStrategy struct {

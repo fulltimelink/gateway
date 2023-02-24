@@ -7,12 +7,13 @@
 package v1
 
 import (
-	v1 "github.com/go-kratos/gateway/api/gateway/config/v1"
+	reflect "reflect"
+	sync "sync"
+
+	v1 "github.com/fulltimelink/gateway/api/gateway/config/v1"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	durationpb "google.golang.org/protobuf/types/known/durationpb"
-	reflect "reflect"
-	sync "sync"
 )
 
 const (

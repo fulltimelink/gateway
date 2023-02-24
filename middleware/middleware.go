@@ -3,7 +3,7 @@ package middleware
 import (
 	"net/http"
 
-	configv1 "github.com/go-kratos/gateway/api/gateway/config/v1"
+	configv1 "github.com/fulltimelink/gateway/api/gateway/config/v1"
 )
 
 // Factory is a middleware factory.

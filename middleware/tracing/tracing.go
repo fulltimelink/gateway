@@ -8,9 +8,9 @@ import (
 	"sync"
 	"time"
 
-	config "github.com/go-kratos/gateway/api/gateway/config/v1"
-	v1 "github.com/go-kratos/gateway/api/gateway/middleware/tracing/v1"
-	"github.com/go-kratos/gateway/middleware"
+	config "github.com/fulltimelink/gateway/api/gateway/config/v1"
+	v1 "github.com/fulltimelink/gateway/api/gateway/middleware/tracing/v1"
+	"github.com/fulltimelink/gateway/middleware"
 	"github.com/go-kratos/kratos/v2"
 	"go.opentelemetry.io/otel"
 	"go.opentelemetry.io/otel/codes"
