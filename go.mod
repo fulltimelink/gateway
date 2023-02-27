@@ -3,6 +3,7 @@ module github.com/fulltimelink/gateway
 go 1.18
 
 require (
+	github.com/dgrijalva/jwt-go v3.2.0+incompatible
 	github.com/go-kratos/aegis v0.1.2
 	github.com/go-kratos/kratos/contrib/config/nacos/v2 v2.0.0-20230223102623-19f008b48379
 	github.com/go-kratos/kratos/contrib/metrics/prometheus/v2 v2.0.0-20220309025117-4387085047b9

@@ -23,6 +23,7 @@ import (
 	_ "github.com/fulltimelink/gateway/middleware/bbr"
 	"github.com/fulltimelink/gateway/middleware/circuitbreaker"
 	_ "github.com/fulltimelink/gateway/middleware/cors"
+	_ "github.com/fulltimelink/gateway/middleware/dxauth"
 	_ "github.com/fulltimelink/gateway/middleware/logging"
 	_ "github.com/fulltimelink/gateway/middleware/rewrite"
 	_ "github.com/fulltimelink/gateway/middleware/tracing"

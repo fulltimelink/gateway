@@ -11,7 +11,7 @@ api:
 build:
 	GOOS=linux GOARCH=amd64 go build -o gateway github.com/fulltimelink/gateway/cmd/gateway
 
-versions := 0.1.4
+versions := 0.1.6
 .PHONY: docker
 docker:
 	docker build -t gateway:v$(versions) .
