@@ -1,4 +1,4 @@
-FROM alpine:3.17.1
+FROM alpine:3.17.1 AS base
 LABEL maintainer="120608668@qq.com"
 RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
 
@@ -26,4 +26,9 @@ WORKDIR $WORKDIR
 EXPOSE 8080
 EXPOSE 7070
 EXPOSE 6060
+
+FROM base as pre
 CMD ["./gateway", "-conf", "configs/config.yaml", "-discovery.dsn", "nacos://nacos.java:8848?namespaceid=dx-transcode&timeout=5000&loglevel=debug&notloadcacheatstart=true"]
+
+FROM base as ga
+CMD ["./gateway", "-conf", "configs/config.yaml", "-discovery.dsn", "nacos://nacos.java:8848?namespaceid=go&timeout=5000&loglevel=debug&notloadcacheatstart=true"]
